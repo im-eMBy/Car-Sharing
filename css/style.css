@@ -1,0 +1,125 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #ff0000;
+    --pinkshadow: #ff004d;
+    --blogfontcol: #6A6A6A;
+    --grayfontcol: #B2B2B2;
+    --container-width: 1088px;
+}
+header {
+    height: 807px;
+    background-image: url("../images/Image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--black);
+    opacity: .3;
+    z-index: 1;
+}
+header * {
+    z-index: 100;
+}
+.header--bar {
+    height: 93px;
+    width: 100%;
+    background-color: rgba(0,0,0,.66);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header--logo {
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 35px;
+}
+.header--logo--car {
+    margin-left: 10px;
+    margin-right: 5px;
+    color: var(--red);
+    font-weight: 800;
+}
+.header--nav {
+    margin-right: 125px;
+    display: flex;
+    align-items: center;
+}
+.header--nav--link {
+    padding: 35px 40px;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+}
+.header--nav--link:hover {
+    background-color: rgba(255, 255, 255, 0.33);
+}
+
+.header--banner {
+    width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner--title {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 123px;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.banner--text {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white);
+    text-align: center;
+}
+.banner--btn--container {
+    margin-top: 54px;
+}
+.button--share, .button--features {
+    padding: 22px 55px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.button--share {
+    background-color: var(--red);
+    color: var(--white);
+}
+.button--features {
+    background-color: var(--white);
+    color: var(--red);
+}
+
